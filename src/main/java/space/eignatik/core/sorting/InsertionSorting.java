@@ -1,8 +1,6 @@
 package space.eignatik.core.sorting;
 
-public class InsertionSorting implements ISorting {
-    private int[] arrayToSort;
-
+public class InsertionSorting extends Sorting {
     public InsertionSorting(int[] arrayToSort) {
         this.arrayToSort = arrayToSort;
     }
@@ -21,13 +19,5 @@ public class InsertionSorting implements ISorting {
         }
         printArray(arrayToSort);
         return arrayToSort;
-    }
-
-    public int[] getArrayToSort() {
-        return arrayToSort;
-    }
-
-    public void setArrayToSort(int[] arrayToSort) {
-        this.arrayToSort = arrayToSort;
     }
 }

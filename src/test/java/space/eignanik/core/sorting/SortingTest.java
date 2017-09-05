@@ -1,19 +1,15 @@
 package space.eignanik.core.sorting;
 
-import com.sun.tools.javac.util.List;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import space.eignatik.core.sorting.ISorting;
+import space.eignatik.core.sorting.Sorting;
 import space.eignatik.core.sorting.InsertionSorting;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 import static org.testng.Assert.*;
 
-public class InsertionSortingTest {
-    private ISorting sorting;
-
+public class SortingTest {
     @DataProvider(name = "arraysToSort")
     public Object[][] getArraysToSort() {
         return new Object[][] {
@@ -23,9 +19,8 @@ public class InsertionSortingTest {
     }
 
     @Test(dataProvider = "arraysToSort")
-    public void testIfSortWorksCorrectly(int[] arrayToSort, int[] expectedArray) throws Exception {
-        sorting = new InsertionSorting(arrayToSort);
-        int[] result = sorting.sort();
+    public void testIfInsertionSortingWorksCorrectly(int[] arrayToSort, int[] expectedArray) throws Exception {
+        int[] result = new InsertionSorting(arrayToSort).sort();
         assertTrue(Arrays.equals(expectedArray, result));
     }
 }
