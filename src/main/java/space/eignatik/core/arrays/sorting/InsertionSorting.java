@@ -1,4 +1,4 @@
-package space.eignatik.core.sorting;
+package space.eignatik.core.arrays.sorting;
 
 public class InsertionSorting extends Sorting {
     public InsertionSorting(int[] arrayToSort) {

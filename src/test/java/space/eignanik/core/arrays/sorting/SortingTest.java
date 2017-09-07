@@ -1,10 +1,9 @@
-package space.eignanik.core.sorting;
+package space.eignanik.core.arrays.sorting;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import space.eignatik.core.sorting.MergeSorting;
-import space.eignatik.core.sorting.Sorting;
-import space.eignatik.core.sorting.InsertionSorting;
+import space.eignatik.core.arrays.sorting.MergeSorting;
+import space.eignatik.core.arrays.sorting.InsertionSorting;
 
 import java.util.Arrays;
 

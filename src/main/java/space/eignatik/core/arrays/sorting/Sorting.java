@@ -1,4 +1,4 @@
-package space.eignatik.core.sorting;
+package space.eignatik.core.arrays.sorting;
 
 public abstract class Sorting {
     protected int[] arrayToSort;
